@@ -19,7 +19,11 @@ use Illuminate\Support\Facades\Http;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('cooming_soon');
+});
+
+Route::get('/encrypt', function(){
+	return view('encrypt');
 });
 
 Auth::routes();
